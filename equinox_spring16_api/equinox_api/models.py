@@ -16,6 +16,7 @@ class Application(models.Model):
 
 class Operation(models.Model):
     name = models.CharField(max_length=40)
+    description = models.CharField(max_length=40, null=True)
     open = models.BooleanField(default=True)
     application = models.ForeignKey(Application)
 
