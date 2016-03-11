@@ -1,0 +1,45 @@
+{
+  "apiName": "Equinox",
+  "apiHost": "api.spring16.equinox.local",
+  "schema": "http",
+  "port": 80,
+  "urls": {
+      "/applications/": {
+          "GET": null,
+          "POST": [
+              {
+                "paramType": "form",
+                "type": "string",
+                "required": true,
+                "name": "Name",
+                "maxLength": 40
+              },
+              {
+                "paramType": "form",
+                "type": "boolean",
+                "required": false,
+                "name": "Open"
+              }
+          ]
+      },
+      "/applications/{app_id}/": {
+          "GET": null,
+          "PUT": [
+              {
+                "paramType": "form",
+                "type": "string",
+                "required": true,
+                "name": "Name",
+                "maxLength": 40
+              },
+              {
+                "paramType": "form",
+                "type": "boolean",
+                "required": false,
+                "name": "Open"
+              }
+          ],
+          "DELETE": null
+      }
+  }
+}

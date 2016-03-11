@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'equinox_api',
     'xdjango',
     'rest_framework',
+    'rest_framework_swagger'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -73,9 +74,9 @@ REST_FRAMEWORK = {
     ),
 }
 
-ROOT_URLCONF = 'REPLACE_PACKAGE_NAME_HERE.urls'
+ROOT_URLCONF = 'equinox_spring16_api.urls'
 
-WSGI_APPLICATION = 'REPLACE_PACKAGE_NAME_HERE.wsgi.application'
+WSGI_APPLICATION = 'equinox_spring16_api.wsgi.application'
 
 
 # Database

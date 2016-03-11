@@ -19,7 +19,7 @@ from django.contrib import admin
 
 from rest_framework import routers
 
-from equinox_api.views import ApplicationViewSet, OperationViewSet
+from equinox_api.views import ApplicationViewSet, OperationViewSet, InstancesViewSet, UserViewSet
 
 from equinox_spring16_api import settings
 
@@ -27,9 +27,12 @@ from equinox_spring16_api import settings
 router = routers.DefaultRouter()
 router.register(r'applications', ApplicationViewSet)
 router.register(r'operations', OperationViewSet)
+router.register(r'instances', InstancesViewSet)
+router.register(r'users', UserViewSet)
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(router.urls)),
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

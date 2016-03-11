@@ -73,6 +73,7 @@ create_and_provision_virtualenv () {
     sudo $PIP install xdjango==0.2
     sudo $PIP install django-extra-fields==0.5
     sudo $PIP install djangorestframework-camel-case==0.2.0
+    sudo $PIP install django-rest-swagger==0.3.5
 }
 
 copy_and_set_up_django_project () {
