@@ -8,6 +8,10 @@ Makesdks makes it possible to build automatically API clients from Swagger speci
 
 First, it retrieves swagger specification from public Swagger API Docs. You can see a Django Rest Swagger project example [here](https://github.com/ivanprjcts/equinox-spring16-API).  
 
+Then, it transforms swagger specification files into a custom json model, which makesdks tool will be able to read.
+
+Finally, makesdks tool generate all API Clients from transformed swagger models.
+
 
 ## Requirements
 
