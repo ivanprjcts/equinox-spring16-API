@@ -22,7 +22,7 @@ Finally, makesdks tool generates all API Clients from transformed swagger models
 * sdklib 0.5.2.
 
 
-## USAGE
+## Usage
 
 * Get Swagger API JSON.
 ```
@@ -36,6 +36,13 @@ tool.py transform_swagger_api
 ```
 tool.py makesdks
 ```
+
+
+## Outputs
+
+* Python sdk.
+* AngularJS service.
+
 
 ## Authors
 
