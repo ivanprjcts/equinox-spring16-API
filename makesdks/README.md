@@ -26,3 +26,7 @@ tool.py transform_swagger_api
 ```
 tool.py makesdks
 ```
+
+## Authors
+
+* Iván Martín Vedriel (ivanprjcts@gmail.com).
