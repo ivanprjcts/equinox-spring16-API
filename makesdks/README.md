@@ -10,7 +10,7 @@ First, it retrieves swagger specification from public Swagger API Docs. You can 
 
 Then, it transforms swagger specification files into a custom json model, which makesdks tool will be able to read.
 
-Finally, makesdks tool generate all API Clients from transformed swagger models.
+Finally, makesdks tool generates all API Clients from transformed swagger models.
 
 
 ## Requirements
