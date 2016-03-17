@@ -2,6 +2,12 @@
 
 Tool for auto-generate sdks from a Django rest framework API.
 
+## Description
+
+Makesdks makes it possible to build automatically API clients from Swagger specification.
+
+First, it retrieves swagger specification from public Swagger API Docs. You can see a Django Rest Swagger project example [here](https://github.com/ivanprjcts/equinox-spring16-API).  
+
 
 ## Requirements
 
