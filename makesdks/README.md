@@ -2,6 +2,16 @@
 
 Tool for auto-generate sdks from a Django rest framework API.
 
+## Description
+
+Makesdks makes it possible to build automatically API clients from Swagger specification.
+
+First, it retrieves swagger specification from public Swagger API Docs. You can see a Django Rest Swagger project example [here](https://github.com/ivanprjcts/equinox-spring16-API).  
+
+Then, it transforms swagger specification files into a custom json model, which makesdks tool will be able to read.
+
+Finally, makesdks tool generates all API Clients from transformed swagger models.
+
 
 ## Requirements
 
@@ -12,7 +22,7 @@ Tool for auto-generate sdks from a Django rest framework API.
 * sdklib 0.5.2.
 
 
-## USAGE
+## Usage
 
 * Get Swagger API JSON.
 ```
@@ -26,3 +36,14 @@ tool.py transform_swagger_api
 ```
 tool.py makesdks
 ```
+
+
+## Outputs
+
+* Python sdk.
+* AngularJS service.
+
+
+## Authors
+
+* Iván Martín Vedriel (ivanprjcts@gmail.com).

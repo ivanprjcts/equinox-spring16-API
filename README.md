@@ -6,7 +6,8 @@ Sample Django Rest Framework API
 
 ## Requirements
 
-* Everything is automatically provisioned thanks to deployment_tools.
+* Virtualbox.
+* Vagrant.
 
 
 ## Running
