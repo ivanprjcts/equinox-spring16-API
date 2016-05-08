@@ -19,7 +19,7 @@ from django.contrib import admin
 
 from rest_framework import routers
 
-from equinox_api.views import ApplicationViewSet, OperationViewSet, InstancesViewSet, UserViewSet
+from equinox_api.views import ApplicationViewSet, OperationViewSet, InstancesViewSet, UserViewSet, ItemViewSet
 
 from equinox_spring16_api import settings
 
@@ -28,6 +28,7 @@ router = routers.DefaultRouter()
 router.register(r'applications', ApplicationViewSet)
 router.register(r'operations', OperationViewSet)
 router.register(r'instances', InstancesViewSet)
+router.register(r'items', ItemViewSet)
 router.register(r'users', UserViewSet)
 
 

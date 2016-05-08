@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 from rest_framework import serializers
 
-from equinox_api.models import Operation, Application, Instances
+from equinox_api.models import Operation, Application, Instances, Item
 
 
 class OperationSerializer(serializers.ModelSerializer):
@@ -16,7 +16,7 @@ class OperationSerializer(serializers.ModelSerializer):
 class ApplicationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Application
-        fields = ('name', 'open', 'description')
+        fields = ('name', 'open', 'description', 'new_att')
 
 
 class InstanceSerializer(serializers.ModelSerializer):
@@ -29,3 +29,9 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'email')
+
+
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = ('pk', 'name', 'description')

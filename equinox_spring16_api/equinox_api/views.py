@@ -2,8 +2,10 @@ from django.contrib.auth.models import User
 
 from rest_framework import viewsets
 
-from equinox_api.models import Operation, Application, Instances
-from equinox_api.serializers import ApplicationSerializer, OperationSerializer, InstanceSerializer, UserSerializer
+from equinox_api.models import Operation, Application, Instances, Item
+from equinox_api.serializers import (
+    ApplicationSerializer, OperationSerializer, InstanceSerializer, UserSerializer, ItemSerializer
+)
 
 
 class ApplicationViewSet(viewsets.ModelViewSet):
@@ -36,3 +38,11 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class ItemViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows items to be viewed and edited.
+    """
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
