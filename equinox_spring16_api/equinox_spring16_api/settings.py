@@ -36,7 +36,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'equinox_api',
-    'xdjango',
     'rest_framework',
     'rest_framework_swagger'
 )
@@ -84,13 +83,9 @@ WSGI_APPLICATION = 'equinox_spring16_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'REPLACE_DB_NAME_HERE',
-        'USER': 'REPLACE_DB_USER_HERE',
-        'PASSWORD': 'REPLACE_DB_PASSWORD_HERE',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 }
 
 # Internationalization
